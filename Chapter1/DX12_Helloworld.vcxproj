@@ -69,6 +69,9 @@
     <LinkIncremental>false</LinkIncremental>
     <OutDir>./</OutDir>
   </PropertyGroup>
+  <PropertyGroup Label="Vcpkg">
+    <VcpkgEnabled>false</VcpkgEnabled>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
@@ -139,7 +142,7 @@
       <WholeProgramOptimization>true</WholeProgramOptimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
-      <EnableModules>false</EnableModules>
+      <EnableModules>true</EnableModules>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <AdditionalIncludeDirectories>.;</AdditionalIncludeDirectories>
       <UseStandardPreprocessor>true</UseStandardPreprocessor>
